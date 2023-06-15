@@ -1,0 +1,8 @@
+gunicorn
+django==3.0.8
+jsonfield
+psycopg2==2.8.6
+whitenoise
+django-paypal
+requests
+Pillow 

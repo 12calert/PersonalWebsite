@@ -1,0 +1,253 @@
+:root {
+  --primary-color: #7289da;
+}
+
+body {
+  background: #36393e;
+  margin: 0;
+  font-family: 'Poppins';
+  color: white;
+}
+
+.primary-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.primary-nav li {
+  float: left;
+}
+
+.primary-nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.primary-nav a:hover {
+  background-color: #111;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stories {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+* {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .slideshow-container img {
+    max-width: 375px;
+    max-height: 576px;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+.container input{
+  display: block;
+  margin-top: 0.75em;
+  margin-bottom: 1.5em;
+  border-radius: 8px;
+  border-color: transparent;
+  background-color:#424549;
+  color:white;
+  width: 100%;
+}
+.container button{
+  position: relative;
+  float: right;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border-color: transparent;
+  font-size: 18px;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.container button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px var(--primary-color);
+}
+
+.container form {
+  width: 100%;
+}
+.container {
+  width: 25%;
+  font-size: 20px;
+}
+.container input:hover{
+  border-color: var(--primary-color);
+  border-style: solid;
+}
+
+.container input:focus {
+  outline: none;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+/* My account section */
+.myaccount-container {
+  width:75%;
+}
+
+.middle-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* fraction*/
+}
+
+.post {
+  background-color: #424549;
+  border-radius: 20px;
+  padding: 1em;
+  margin: 1em;
+}
+
+.account {
+  background-color: #424549;
+  border-radius: 20px;
+  padding: 1em;
+  margin: 1em;
+}
+
+.settings-container {
+  display: flex;
+}
+
+.menu {
+  margin-left: 2em;
+}
+.menu a {
+  margin: 0;
+  margin-right: 1.2em;
+  padding: 0.5em 10em 0.5em 0.5em
+}
+
+.menu a:hover {
+  background: #1e2124;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.background-black {
+  background: #1e2124;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20em;
+  margin-right: 2em;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+}
