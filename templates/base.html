@@ -11,24 +11,26 @@
   {% block css %}{% endblock %}
 </head>
   <main>
+    <div class="full">
     <div class="navbar">
-        <ul class="primary-nav">
-          <li><a class="logo" href="{% url 'home' %}">Game<span>Buddy</span></a></li>
-          {% if user.is_authenticated %}
-          <li><a href="{% url 'accounts:myaccount' %}">My Account</a></li>
-          <li><a href="{% url 'logout' %}">Log Out</a></li>
-          <li><a href="{% url 'accounts:buy_game' %}">Buy Game</a></li>
-          {% else %}
-          <li><a href="{% url 'accounts:signup' %}">Create Account</a></li>
-          <li><a href="{% url 'login' %}">Log In</a></li>
-          {% endif %}
-          <li><a href="{% url 'download' %}">Download</a></li>
+      <div class="nav name">Jakub Kulik</div>
+      <div class="navline"></div>
+    </div>
+    <div class="mainpage">
+      <div class="leftnav">
+        <ul class="primary-nav nav">
+          <li><a class="logo" href="{% url 'aboutme' %}">About Me</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="{% url 'projects' %}">Projects</a></li>
         </ul>
+      </div>
+    
+      <div class="center">
+        {% block content %}
+        {% endblock %}
+      </div>
     </div>
-    <div class="center">
-    {% block content %}
-    {% endblock %}
-    </div>
+  </div>
   </main>
 </body>
 </html>

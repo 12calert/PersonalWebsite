@@ -24,6 +24,15 @@ def homepage(request):
     context = { 'user_names': user_names }
     return render(request, 'home.html')
 
+def projects( request ):
+    return render(request, 'home.html')
+
+def aboutme( request ):
+    return render(request, 'home.html')
+
+def blog( request ):
+    return render(request, 'home.html')
+
 def get_users(request):
     users = models.CustomUser.objects.filter()
     print(serializers.serialize('json', users))

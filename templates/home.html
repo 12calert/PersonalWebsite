@@ -7,130 +7,32 @@
 
 {% block content %}
 
-<div class="slideshow-container">
+<div class="project-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="{% static 'images/img1.jpg' %}" style="width:100%">
-  <div class="text">Caption Text</div>
-  <div>
-    <button type="submit" id="yes">Yes</button>
-    <button type="submit" id="no">No</button>
+  <div class="project-slide">
+    <img src="{% static 'images/img1.jpg' %}" style="width:100%">
+    <div class="text">A nice project</div>
+    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor dictum arcu id molestie. Nulla facilisi. Sed feugiat, elit id efficitur malesuada, orci lorem accumsan nulla, tincidunt venenatis felis justo egestas nulla. Nam lacinia sem bibendum orci interdum, sit amet bibendum elit interdum. Ut a augue rutrum, maximus sem sed, ornare purus. Suspendisse porta venenatis metus, id iaculis quam commodo nec. Quisque porta vestibulum eros, id tempus nisl varius eget. Proin malesuada at mauris at pellentesque. Sed in gravida nisi. Sed aliquam sem dui, ut ornare sapien malesuada vel. Quisque quis augue ac libero molestie laoreet. </div>
+  </div>
+
+  <div class="project-slide">
+    <img src="{% static 'images/img1.jpg' %}" style="width:100%">
+    <div class="text">A nice project</div>
+    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor dictum arcu id molestie. Nulla facilisi. Sed feugiat, elit id efficitur malesuada, orci lorem accumsan nulla, tincidunt venenatis felis justo egestas nulla. Nam lacinia sem bibendum orci interdum, sit amet bibendum elit interdum. Ut a augue rutrum, maximus sem sed, ornare purus. Suspendisse porta venenatis metus, id iaculis quam commodo nec. Quisque porta vestibulum eros, id tempus nisl varius eget. Proin malesuada at mauris at pellentesque. Sed in gravida nisi. Sed aliquam sem dui, ut ornare sapien malesuada vel. Quisque quis augue ac libero molestie laoreet. </div>
+  </div>
+  <div class="project-slide">
+    <img src="{% static 'images/img1.jpg' %}" style="width:100%">
+    <div class="text">A nice project</div>
+    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor dictum arcu id molestie. Nulla facilisi. Sed feugiat, elit id efficitur malesuada, orci lorem accumsan nulla, tincidunt venenatis felis justo egestas nulla. Nam lacinia sem bibendum orci interdum, sit amet bibendum elit interdum. Ut a augue rutrum, maximus sem sed, ornare purus. Suspendisse porta venenatis metus, id iaculis quam commodo nec. Quisque porta vestibulum eros, id tempus nisl varius eget. Proin malesuada at mauris at pellentesque. Sed in gravida nisi. Sed aliquam sem dui, ut ornare sapien malesuada vel. Quisque quis augue ac libero molestie laoreet. </div>
+  </div>
+  <div class="project-slide">
+    <img src="{% static 'images/img1.jpg' %}" style="width:100%">
+    <div class="text">A nice project</div>
+    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor dictum arcu id molestie. Nulla facilisi. Sed feugiat, elit id efficitur malesuada, orci lorem accumsan nulla, tincidunt venenatis felis justo egestas nulla. Nam lacinia sem bibendum orci interdum, sit amet bibendum elit interdum. Ut a augue rutrum, maximus sem sed, ornare purus. Suspendisse porta venenatis metus, id iaculis quam commodo nec. Quisque porta vestibulum eros, id tempus nisl varius eget. Proin malesuada at mauris at pellentesque. Sed in gravida nisi. Sed aliquam sem dui, ut ornare sapien malesuada vel. Quisque quis augue ac libero molestie laoreet. </div>
   </div>
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="{% static 'images/img1.jpg' %}" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="{% static 'images/img1.jpg' %}" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-</form>
-
 <script>
-let slideIndex = 1;
-var index = -1;
-var users;
-
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
-function get_users() {
-
-  var input = 0
-
-  return $.ajax({
-        url: "{% url 'get_users' %}",
-        data: {
-          'inputValue': input
-        },
-        dataType: 'json',
-        success: function (data) {
-          users = JSON.parse(data)
-        }
-      });
-}
-
-function next() {
-  if ( users.length > index + 1 ) {
-    index += 1
-    var divs = document.getElementsByClassName('text');
-    for (var i = 0; i < divs.length; i++) {
-      divs[i].innerHTML = ""
-      var info = document.createElement('div');
-
-      var firstline = document.createElement('div');
-      firstline.innerHTML = users[index].fields.nickname + " " + users[index].fields.age;
-      info.appendChild(firstline)
-
-      var secondline = document.createElement('div');
-      secondline.innerHTML = "23 kilometers away"
-      info.appendChild(secondline)
-
-      divs[i].appendChild(info)
-    }
-  }
-}
-
-$("#yes").click(function () {
-  var input = 0
-  $.ajax({
-      url: "{% url 'add_friend' %}",
-      data: {
-        'id': users[index].fields.user_id
-      },
-      dataType: 'json',
-      success: function (data) {
-      }
-    });
-  next()
-});
-
-$("#no").click(function () {
-  next()
-});
-
-get_users().then( response => next() )
 
 </script>
 {% endblock %}

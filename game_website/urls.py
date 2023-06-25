@@ -23,17 +23,11 @@ from django.views.generic.base import RedirectView
 from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('accounts/', include('accounts.urls'), name='accounts'),
-    path('accounts/', include('django.contrib.auth.urls'), name='accounts'),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
     path('home', views.homepage, name='home'),
-    path('get_users', views.get_users, name='get_users'),
-    path('add_friend', views.add_friend, name='add_friend'),
-    path('download', TemplateView.as_view(template_name='download.html'), name='download'),
-    path('paypal/', include('paypal.standard.ipn.urls')),
-    path('paypal-return/', views.PaypalReturnView.as_view(), name='paypal-return'),
-    path('paypal-cancel/', views.PaypalCancelView.as_view(), name='paypal-cancel'),
+    path('projects', views.projects, name='projects'),
+    path('blog', views.projects, name='blog'),
+    path('aboutme', views.projects, name='aboutme'),
     path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('images/favicon.ico')))
 
 ]
