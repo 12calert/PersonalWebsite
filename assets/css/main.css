@@ -70,17 +70,28 @@ body {
 }
 
 .project-slide {
-  position: relative;
-  width: 300px;
-  height: 300px;
+  margin: 1em;
 }
 
-.text {
+.titletextspace {
   position: absolute;
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity as needed */
   color: #fff; /* Adjust the text color as needed */
-  padding: 5px 10px;
   font-size: 14px;
+  width: 100%;
+}
+.project-slide img {
+  width: 300px;
+  height: 300px;
+}
+
+.description {
+  width: 300px;
+}
+
+.imagecontainer {
+  position: relative;
+  width: 300px; /* Adjust width as needed */
 }
