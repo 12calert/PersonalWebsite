@@ -26,8 +26,8 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
     path('home', views.homepage, name='home'),
     path('projects', views.projects, name='projects'),
-    path('blog', views.projects, name='blog'),
-    path('aboutme', views.projects, name='aboutme'),
+    path('blog', views.blog, name='blog'),
+    path('aboutme', views.aboutme, name='aboutme'),
     path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('images/favicon.ico')))
 
 ]

@@ -25,7 +25,7 @@ def homepage(request):
     return render(request, 'home.html')
 
 def projects( request ):
-    return render(request, 'home.html')
+    return render(request, 'portfolio.html')
 
 def aboutme( request ):
     return render(request, 'home.html')

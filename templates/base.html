@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% block title %}Base html{% endblock %}</title>
+  <title>{% block title %}Base html{% endblock %} | Jakub Kulik</title>
   <link rel="stylesheet" href="{% static 'css/main.css' %}">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   {% block css %}{% endblock %}
@@ -13,8 +13,8 @@
   <main>
     <div class="full">
     <div class="navbar">
-      <div class="nav name">Jakub Kulik</div>
-      <div class="navline"></div>
+      <div class="nav name"><p>Jakub Kulik</p></div>
+      <div class="navline"><h2 class="pname">{% block pname %}Base html{% endblock %}</h2></div>
     </div>
     <div class="mainpage">
       <div class="leftnav">

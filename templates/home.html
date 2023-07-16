@@ -2,58 +2,24 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Home{% endblock %}
-
+{% block title %}About Me{% endblock %}
+{% block pname %}About Me{% endblock %}
 
 {% block content %}
 
-<div class="project-container">
+<div class="aboutcontainer">
+    <div class="abouthero"><img src="{% static 'images/herobg.jpg' %}"></div>
+    <div class="mainabout">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis mi libero. Aliquam ut porta magna. Nam suscipit ante pharetra enim malesuada, nec lacinia ipsum molestie. Mauris ornare in augue porta varius. In hac habitasse platea dictumst. Nam ac nunc lobortis, consequat est non, facilisis nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc nisi risus, pulvinar gravida nisi a, molestie vestibulum urna. In vel massa ac felis cursus vestibulum. Nulla nec diam mi. In et magna sit amet purus malesuada interdum. Curabitur suscipit libero lacus, a cursus ex venenatis quis. Sed scelerisque arcu vitae arcu congue, in aliquam elit mattis. Donec egestas massa eget arcu dictum tincidunt. Phasellus non augue in eros auctor sollicitudin.
 
-  <div class="project-slide">
-    <div class="imagecontainer">
-      <img src="{% static 'images/img1.jpg' %}">
-      <div class="titletextspace">
-        <div class="title"><h3>Title</h3></div>
-        <div class="subtitle">subtitle</div>
-      </div>
+Phasellus a lorem iaculis neque condimentum sodales elementum ac massa. Suspendisse at augue ligula. Proin sagittis risus lectus, ac tempus dui egestas maximus. Phasellus nibh orci, dignissim quis mi sit amet, malesuada suscipit metus. Suspendisse semper odio facilisis ex bibendum, vel dapibus orci ornare. Aenean libero ex, volutpat dictum lorem vel, scelerisque consectetur metus. Proin eu metus in felis aliquam semper. Suspendisse lacus nulla, dapibus eget imperdiet ac, elementum vitae mauris. Sed bibendum dui sagittis dapibus vestibulum. Nullam nibh turpis, gravida at ex a, tincidunt fringilla nulla. Cras euismod elit sed erat consectetur mattis. Donec rhoncus massa sit amet lacus posuere ultricies.
+
+Praesent mattis, eros in vehicula luctus, metus odio dignissim neque, non ultrices ante dui non orci. Donec vitae molestie odio. Quisque eu velit sit amet eros fermentum vestibulum et in justo. Suspendisse eleifend nisl in augue maximus, at tincidunt libero egestas. In elementum eros vel justo volutpat eleifend aliquet vel ligula. Aenean laoreet consectetur molestie. Fusce finibus metus nisi, quis ultricies risus scelerisque non. Aliquam non efficitur sapien. Cras aliquam gravida faucibus. Nunc vulputate pharetra turpis suscipit laoreet. Nunc ut enim odio. Duis vel mattis magna, sed consectetur ante. Suspendisse ut auctor felis, in posuere odio. Donec ligula eros, cursus ut volutpat at, venenatis sed arcu. Maecenas accumsan et augue faucibus scelerisque. Ut elementum risus eu dolor placerat convallis.
+
+Nulla facilisi. Nulla ex sapien, commodo ac tincidunt eu, mattis id purus. Curabitur rutrum auctor tincidunt. Mauris sapien neque, mattis non elit sit amet, iaculis suscipit sem. Quisque interdum commodo purus in ultricies. Integer posuere sapien in sapien porttitor, eu convallis lorem posuere. Vestibulum blandit efficitur tortor non pharetra. Quisque venenatis, eros sit amet consectetur auctor, ipsum elit fermentum risus, a fringilla velit dolor sit amet est. Praesent eleifend, urna varius aliquam maximus, erat nulla dignissim tellus, non maximus tellus nisi ut nibh. Ut vestibulum libero eget lectus volutpat, sit amet laoreet turpis lacinia. Suspendisse urna magna, mollis quis erat quis, convallis ultricies metus.
+
+Etiam nec quam tellus. Pellentesque convallis lacus sed ex fermentum gravida. Aliquam ut blandit sapien. Nulla tempor nisl luctus elit sagittis rhoncus consequat sit amet felis. Mauris gravida magna et dui interdum, ac interdum risus pellentesque. Nunc elementum nisi at lorem mollis venenatis. Aliquam ultricies enim eget venenatis tincidunt. Nulla magna quam, convallis sit amet interdum sit amet, tempor accumsan nisi. Sed vulputate mi ullamcorper, tincidunt nisi laoreet, accumsan sem. Ut tempus non velit at consequat.
     </div>
-    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor dictum arcu id molestie. Nulla facilisi. Sed feugiat, elit id efficitur malesuada, orci lorem accumsan nulla, tincidunt venenatis felis justo egestas nulla. Nam lacinia sem bibendum orci interdum, sit amet bibendum elit interdum. Ut a augue rutrum, maximus sem sed, ornare purus. Suspendisse porta venenatis metus, id iaculis quam commodo nec. Quisque porta vestibulum eros, id tempus nisl varius eget. Proin malesuada at mauris at pellentesque. Sed in gravida nisi. Sed aliquam sem dui, ut ornare sapien malesuada vel. Quisque quis augue ac libero molestie laoreet. </div>
-  </div>
+</div>
 
-  <div class="project-slide">
-    <div class="imagecontainer">
-      <img src="{% static 'images/img1.jpg' %}">
-      <div class="titletextspace">
-        <div class="title"><h3>Title</h3></div>
-        <div class="subtitle">subtitle</div>
-      </div>
-    </div>
-    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor dictum arcu id molestie. Nulla facilisi. Sed feugiat, elit id efficitur malesuada, orci lorem accumsan nulla, tincidunt venenatis felis justo egestas nulla. Nam lacinia sem bibendum orci interdum, sit amet bibendum elit interdum. Ut a augue rutrum, maximus sem sed, ornare purus. Suspendisse porta venenatis metus, id iaculis quam commodo nec. Quisque porta vestibulum eros, id tempus nisl varius eget. Proin malesuada at mauris at pellentesque. Sed in gravida nisi. Sed aliquam sem dui, ut ornare sapien malesuada vel. Quisque quis augue ac libero molestie laoreet. </div>
-  </div>
-
-  <div class="project-slide">
-    <div class="imagecontainer">
-      <img src="{% static 'images/img1.jpg' %}">
-      <div class="titletextspace">
-        <div class="title"><h3>Title</h3></div>
-        <div class="subtitle">subtitle</div>
-      </div>
-    </div>
-    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor dictum arcu id molestie. Nulla facilisi. Sed feugiat, elit id efficitur malesuada, orci lorem accumsan nulla, tincidunt venenatis felis justo egestas nulla. Nam lacinia sem bibendum orci interdum, sit amet bibendum elit interdum. Ut a augue rutrum, maximus sem sed, ornare purus. Suspendisse porta venenatis metus, id iaculis quam commodo nec. Quisque porta vestibulum eros, id tempus nisl varius eget. Proin malesuada at mauris at pellentesque. Sed in gravida nisi. Sed aliquam sem dui, ut ornare sapien malesuada vel. Quisque quis augue ac libero molestie laoreet. </div>
-  </div>
-
-  <div class="project-slide">
-    <div class="imagecontainer">
-      <img src="{% static 'images/img1.jpg' %}">
-      <div class="titletextspace">
-        <div class="title"><h3>Title</h3></div>
-        <div class="subtitle">subtitle</div>
-      </div>
-    </div>
-    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor dictum arcu id molestie. Nulla facilisi. Sed feugiat, elit id efficitur malesuada, orci lorem accumsan nulla, tincidunt venenatis felis justo egestas nulla. Nam lacinia sem bibendum orci interdum, sit amet bibendum elit interdum. Ut a augue rutrum, maximus sem sed, ornare purus. Suspendisse porta venenatis metus, id iaculis quam commodo nec. Quisque porta vestibulum eros, id tempus nisl varius eget. Proin malesuada at mauris at pellentesque. Sed in gravida nisi. Sed aliquam sem dui, ut ornare sapien malesuada vel. Quisque quis augue ac libero molestie laoreet. </div>
-  </div>
-
-<script>
-
-</script>
 {% endblock %}
