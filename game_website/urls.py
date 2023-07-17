@@ -28,6 +28,7 @@ urlpatterns = [
     path('projects', views.projects, name='projects'),
     path('blog', views.blog, name='blog'),
     path('aboutme', views.aboutme, name='aboutme'),
+    path('babblevoice', views.babblevoice, name='babblevoice'),
     path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('images/favicon.ico')))
 
 ]

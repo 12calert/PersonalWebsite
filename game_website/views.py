@@ -33,6 +33,9 @@ def aboutme( request ):
 def blog( request ):
     return render(request, 'home.html')
 
+def babblevoice( request ):
+    return render(request, 'babblevoice.html')
+
 def get_users(request):
     users = models.CustomUser.objects.filter()
     print(serializers.serialize('json', users))

@@ -120,8 +120,18 @@ body {
   width: 66%;
 }
 
+.abouthero {
+  display: flex;
+}
+
+.heroimagecontainer {
+  display: flex;
+  justify-content: center;
+}
+
 .abouthero img {
-  width: -webkit-fill-available;
+  width: 50%;
+  border-radius: 50%;
 }
 
 .pname {
