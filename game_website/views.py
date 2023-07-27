@@ -36,6 +36,9 @@ def blog( request ):
 def babblevoice( request ):
     return render(request, 'babblevoice.html')
 
+def game1( request ):
+    return render(request, 'game1.html')
+
 def get_users(request):
     users = models.CustomUser.objects.filter()
     print(serializers.serialize('json', users))
