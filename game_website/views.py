@@ -39,6 +39,12 @@ def babblevoice( request ):
 def game1( request ):
     return render(request, 'game1.html')
 
+def experimentio( request ):
+    return render(request, 'experimentio.html')
+
+def srmt( request ):
+    return render(request, 'srmt.html')
+
 def get_users(request):
     users = models.CustomUser.objects.filter()
     print(serializers.serialize('json', users))

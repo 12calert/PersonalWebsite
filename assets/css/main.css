@@ -119,6 +119,7 @@ body {
 .aboutcontainer {
   width: 66%;
   background-color: #424242;
+  padding: 1em;
 }
 
 .abouthero {
