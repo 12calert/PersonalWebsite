@@ -2,6 +2,14 @@
   --primary-color: #7289da;
 }
 
+a:visited {
+  color: #8c9eff;
+}
+
+a {
+  color: #c5cae9;
+}
+
 body {
   background: #303030;
   margin: 0;

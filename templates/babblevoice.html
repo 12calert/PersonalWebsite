@@ -6,29 +6,38 @@
 {% block pname %}Babblevoice{% endblock %}
 
 {% block content %}
-
 <div class="aboutcontainer">
     <div class="mainabout">
 
         <h3>What is Babblevoice?</h3>
         <p>Babblevoice is a smart cloud-hosted telephony system built specifically for GP surgeries. It is simple to use, yet meets the complex needs of today’s GP practices, CCGs and PCNs. We excel in areas such as cost effectiveness, line capacity, flexibility, remote-working, and real-time reporting. 
 
-            All with no minimum contract terms or exit fees. 
+            <p>All with no minimum contract terms or exit fees.</p>
             
-            Our mission is to deliver a phone system that supports surgeries in delivering care to patients, with functionality that includes:
-            - intelligent call routing and queuing enabling telephone triage
-            - integration with EMIS and SystmOne allowing secure automated access to patient records
-            - automated patient-led booking and managing of appointments
-            - call recording for monitoring and training
-            - real-time reporting
-            
+            <p>Our mission is to deliver a phone system that supports surgeries in delivering care to patients, with functionality that includes:</p>
+            <ul>
+                <li>intelligent call routing and queuing enabling telephone triage</li>
+                <li>integration with EMIS and SystmOne allowing secure automated access to patient records</li>
+                <li>automated patient-led booking and managing of appointments</li>
+                <li>call recording for monitoring and training</li>
+                <li>real-time reporting</li>
+            </ul>
             <a href="https://www.babblevoice.com/">www.babblevoice.com</a>
         </p>
 
         <h3>What is my role?</h3>
-            <p>I am a Software Developer in a small 4 person team. My job is primarily to develop, test and maintain our new core telephony system, which includes all the features mentioned above as well as
-                our own SIP server and a robust RTP engine (available under MIT licencse <a href="https://github.com/babblevoice/projectrtp">here</a>).
-            </p>
+            <p>I am a Software Developer in a small 4 person team. My job is primarily to develop, test and maintain our new core telephony system, which includes all the features mentioned above.</p>
+            <p>Some interesting projects I worked on (that are available to the general public):</p>
+            <ul>
+                <li>projectrtp - An RTP node addon which offers functionality to process RTP data streams and mix it. All performance tasks are implemented in C++ and use boost::asio for IO completion ports for high concurrency.
+                    It is an open source project under an MIT license available <a href="https://github.com/babblevoice/projectrtp">here.</a>
+                </li>
+                <li>Website functionalities - Developed a whole range tools used by Practice Managers and doctores, such as a widely praised by the GP surgeries Vibes suite, which is a tool for phone call data visualisation.</li>
+            </ul>
+                    <div class="vibes-images">
+                        <img src="{% static 'images/babblevoice2.png' %}" style="width:100%">
+                        <img src="{% static 'images/babblevoice3.png' %}" style="width:100%">
+                    </div>
     </div>
 </div>
 
