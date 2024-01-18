@@ -137,13 +137,18 @@ body {
 }
 
 .heroimagecontainer {
-  display: flex;
-  justify-content: center;
+  float: left;
+  width: 20%;
+  margin-right: 7em;
 }
 
 .abouthero img {
-  width: 50%;
-  border-radius: 50%;
+  width: -webkit-fill-available;
+  border-radius: 10%;
+}
+
+.herotextcontainer {
+  flex: 1;
 }
 
 .pname {
