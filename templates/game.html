@@ -1,0 +1,32 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Viridiastrum Vexillum{% endblock %}
+{% block pname %}Viridiastrum Vexillum{% endblock %}
+
+{% block content %}
+<div class="aboutcontainer">
+    <div class="mainabout">
+
+        <h3>Viridiastrum Vexillum</h3>
+        <p>This game has been developed by me over the course of my studies and served as a showcase of my design and execution of large software projects.</p> 
+            
+            <p>The project features:</p>
+            <ul>
+                <li>A 2D game engine developed on top of pygame</li>
+                <li>Custom map builder allowing for quick creation of TMX maps</li>
+                <li>Dynamic quest system</li>
+                <li>Ability, quest and dialogue creator</li>
+                <li>Complex progression system of characters with different classes</li>
+                <li>Non-linear development of player characters through use of talent trees</li>
+            </ul>
+        </p>
+
+        <div class="vibes-images">
+            <img src="{% static 'images/game2.png' %}" style="width:100%">
+        </div>
+    </div>
+</div>
+
+{% endblock %}
