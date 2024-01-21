@@ -8,49 +8,103 @@
 {% block content %}
 
 <div class="aboutcontainer">
+    
     <div class="abouthero">
-        <div class="heroimagecontainer">
-            <img src="{% static 'images/pfp.jpg' %}">
-        </div>
-        <div class="herotextcontainer">
-            <h3>Hi!</h3>
-            <p>My name is Jakub and I am currently working as a Software Developer.</p>
-            <p>If you'd like, please have a look at my portfolio under <a href="{% url 'projects' %}">projects.</a></p>
-        </div>
-    </div>
-    <div class="mainabout">
+        <span class="border">
+            <div class="heroimagecontainer">
+                <img src="{% static 'images/pfp.jpg' %}">
 
-        <h3>What I Do</h3>
-        <p>I am a University taught Engineer with a total of 7 years of programming experience.</p>
-        <p>I mostly work on Networks with multiple components interacting with eachother in a Docker environment.</p>
-        <p>Additionally, I help businesses achieve recognition and increase profitability by refining their digital marketing strategy and creating web apps that conform to the latest industry's standards.</p>
-
-        <h3>My Skills</h3>
-
-        <ul>
-            <li>NodeJS</li>
-            <li>Docker</li>
-            <li>Django</li>
-            <li>PostgreSQL</li>
-            <li>Unreal Engine 5</li>
-        </ul>
-        <p>For usage example see <a href="{% url 'projects' %}">projects</a></p>
         
-        <h3>Programming Languages</h3>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>HTML/CSS</li>
-            <li>SQL</li>
-            <li>C++</li>
-        </ul>
-
-        <h3>Education</h3>
-        <p><span style="font-weight: bold;">Highschool:</span> Mickiewicz Highschool, International Baccalaureate programme</p>
-        <p><span style="font-weight: bold;">University:</span> Unversity of Aberdeen, BSc Computer Science</p>
-
+            </div>
+            <div class="herotextcontainer">
+                <h3>Hi!</h3>
+                <p>My name is Jakub and I am currently working as a Software Developer.</p>
+                <p>If you'd like, please have a look at my portfolio under <a href="{% url 'projects' %}">projects.</a></p>
+            </div>
+        </span>
     </div>
+
+        
+    <div class="CenterFirstInfo">
+        <div class="firstInfo" >
+
+            <h3>What I Do</h3>
+            
+            <span class="boxs">
+                <p>I am a University taught Engineer with a total of 7 years of programming experience.</p>
+                <p>I mostly work on Networks with multiple components interacting with eachother in a Docker environment.</p>
+                <p>Additionally, I help businesses achieve recognition and increase profitability by refining their digital marketing strategy and creating web apps that conform to the latest industry's standards.</p>
+            </span>
+        </div>
+    </div>
+
+         
+
+
+    <div class="SkillsLangAndShool">
+        <div class="CenterFirstInfo">
+
+            <span class="Skills">
+                <h3>My Skills</h3>
+                
+
+                <ul class="Icons">
+                    <li><img src="{% static 'images/Icons/NodeJS.png' %}"></li>
+                    <li><img src="{% static 'images/Icons/Docker.png' %}"></li>
+                    <li><img src="{% static 'images/Icons/Django.png' %}"></li>
+                    <li><img src="{% static 'images/Icons/PostgreSQL.png' %}"></li>
+                    <li><img src="{% static 'images/Icons/UnrealEngine.png' %}"></li>
+                </ul>
+
+
+                <ul class="List">
+                    <li>NodeJS</li>
+                    <li>Docker</li>
+                    <li>Django</li>
+                    <li>PostgreSQL</li>
+                    <li>Unreal Engine 5</li>
+                </ul>
+                <p>For usage example see <a href="{% url 'projects' %}">projects</a></p>
+            </span>
+
+            <br/><br/>
+
+            <span class="Lang">
+                <h3>Programming Languages</h3>
+                
+                <ul class="Icons">
+                    <li><img src="{% static 'images/Icons/Python.png' %}"></li>
+                    <li><img src="{% static 'images/Icons/JavaScript.png' %}"></li>
+                    <li><img src="{% static 'images/Icons/Html.png' %}"></li>
+                    <li><img src="{% static 'images/Icons/Css.png' %}"></li>
+                    <li><img src="{% static 'images/Icons/Sql.png' %}"></li>
+                    <li><img src="{% static 'images/Icons/Cpp.png' %}"></li>
+                </ul>
+
+                <ul class="List">
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SQL</li>
+                    <li>C++</li>
+                </ul>
+            </span>
+
+
+            <br/><br/><br/><br/>
+
+            <span class="Education">
+                <h3>Education</h3>
+                <p><span style="font-weight: bold;">Highschool:</span> Mickiewicz Highschool, International Baccalaureate programme</p>
+                <p><span style="font-weight: bold;">University:</span> Unversity of Aberdeen, BSc Computer Science</p>
+        
+            </span>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        </div>
+    </div>
+      
+    
 </div>
 
 {% endblock %}

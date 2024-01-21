@@ -13,18 +13,28 @@
   <main>
     <div class="full">
     <div class="navbar">
-      <div class="nav name"><p>Jakub Kulik</p></div>
-      <div class="navline"><h2 class="pname">{% block pname %}Base html{% endblock %}</h2></div>
-    </div>
     <div class="mainpage">
-      <div class="leftnav">
-        <ul class="primary-nav nav">
-          <li><a class="logo" href="{% url 'aboutme' %}">About Me</a></li>
-          <!--<li><a href="{% url 'blog' %}">Blog</a></li>-->
-          <li><a href="{% url 'projects' %}">Projects</a></li>
-        </ul>
-      </div>
+      <div class="bar">
+        
+        <div class="leftnav">
+          <div class="nav name"><p>Jakub Kulik</p></div>
+          <ul class="primary-nav nav">
+            <li><a class="logo" href="{% url 'aboutme' %}">About Me</a></li>
+            <!--<li><a href="{% url 'blog' %}">Blog</a></li>-->
+            <li><a href="{% url 'projects' %}">Projects</a></li>
+          </ul>
+        </div>
+        
+    </div>
+          
+    <div class="bg"><h2 class="pname">{% block pname %}Base html{% endblock %}</h2></div>
     
+      
+      <!--
+       
+    
+      -->
+
       <div class="center">
         {% block content %}
         {% endblock %}
