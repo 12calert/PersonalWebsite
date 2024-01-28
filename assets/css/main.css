@@ -1,25 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap');
 
+/* -------------------*/
+/*        Main        */
+/* -------------------*/
 
 :root {
   --primary-color: #7289da;
+  --text-color: #0c0022;
+  --white:#e6e6e6;
 }
-
 a:visited {
-  color: #8c9eff;
+  color: #6377ec;
 }
-
 a {
-  color: #c5cae9;
+  color: #7985d4;
 }
-
 body {
-  background: #e6e6e6;
+  background: var(--white);
   margin: 0;
   width: 100%;
   font-family: 'Poppins';
   color: white;
 }
+
+/* -------------------*/
+/*        Nav         */
+/* -------------------*/
 
 .primary-nav {
   display: inline-flex;
@@ -34,7 +40,6 @@ body {
   width: 100%;
   background-color: #180044;
   box-shadow: 2px 0px 20px rgb(204, 204, 204);
-
 }
 .leftnav {
   display: inline-flex;
@@ -43,7 +48,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
 .nav a{
   text-align: center;
   height: 100%;
@@ -54,8 +58,13 @@ body {
 main{
   width: 100%
 }
+
+/* -------------------*/
+/*     Title Text     */
+/* -------------------*/
+
 .bg {
-  background: #e6e6e6;
+  background: var(--white);
   height: 250px;
   width: 100%;
   display: inline-flex;
@@ -63,7 +72,6 @@ main{
   justify-content: center;
   text-align: center;
 }
-
 .bg .pname{
   cursor: pointer;
   margin:0px;
@@ -72,6 +80,10 @@ main{
   font-family: 'Roboto', sans-serif;
   color:#adadad
 }
+
+/* -------------------*/
+/*        Nav         */
+/* -------------------*/
 
 .primary-nav a {
   display: flex;
@@ -85,21 +97,16 @@ main{
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   transition:all 0.2s ease-in-out;
-  
 }
-
 .primary-nav a:hover {
   background-color: #21005e;
 }
-
-
 .primary-nav ul {
  display: inline-flex;
  flex-direction: column;
  float: center;
  width: min-content;
 }
-
 .name {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -107,60 +114,19 @@ main{
   height: 48px;
   font-size: 32px;
   color:white;
-  
   justify-content: center;
   display: flex;
   align-items: center;
 }
-
 .name p {
   margin: 0;
   cursor: pointer;
 }
 
 
-.project-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
-}
-
-.project-slide {
-  margin: 1em;
-  width: 47%;
-}
-
-.titletextspace {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity as needed */
-  color: #fff; /* Adjust the text color as needed */
-  font-size: 14px;
-  width: 100%;
-}
-
-.titletextspace-contents{
-  margin: 10px;
-}
-
-.project-slide img {
-  width: 100%;
-}
-
-.description {
-  background-color: #424242;
-}
-
-.description-text{
-  padding: 10px;
-  padding-top: 15px
-}
-
-.imagecontainer {
-  position: relative;
-}
+/* -------------------*/
+/*         Hi         */
+/* -------------------*/
 
 
 .border{
@@ -172,8 +138,6 @@ main{
   vertical-align: middle;
   
 }
-
-
 .abouthero {
   margin: 0 auto;
   display: inline-flex;
@@ -184,7 +148,7 @@ main{
   background-color: whitesmoke;
   width: 100%;
   height: min-content;
-  color:#060011;
+  color:var(--text-color);
   padding: 32px 0;
   box-shadow: 2px 0px 20px rgb(204, 204, 204);
 
@@ -194,10 +158,7 @@ main{
   flex-direction: column;
   justify-content: center;
   width: 40%;
-  
-
 }
-
 .abouthero img {
   width: 20em;
   border-radius: 12px;
@@ -221,15 +182,15 @@ main{
   font-weight: 300;
 }
 
+
+/* -------------------*/
+/*     What I Do      */
+/* -------------------*/
+
+
 .CenterFirstInfo{
   width: 66em;
   margin:0 auto;
-
-
-
-}
-.CenterFirstInfo span{
-  
 }
 .firstInfo{
   display: inline-flex;
@@ -239,7 +200,6 @@ main{
 
   justify-content: space-around;
 }
-
 .boxs{
   display: inline-flex;
   flex-direction: row;
@@ -253,10 +213,9 @@ main{
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   text-align: center;
-  color:#060011;
+  color:var(--text-color);
   margin-bottom:0;
 }
-
 .firstInfo .boxs p{
   display: inline-flex;
   flex-direction: column;
@@ -269,18 +228,13 @@ main{
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   background-color: whitesmoke;
-  color: #060011;
+  color:var(--text-color);
   box-shadow: 2px 0px 20px rgb(204, 204, 204);
-
-  
-  
-
-  
 }
 
-
-
-
+/* -------------------*/
+/*     My skils       */
+/* -------------------*/
 
 
 
@@ -293,13 +247,10 @@ main{
   background-color: whitesmoke;
   box-shadow: 2px 0px 20px rgb(204, 204, 204);
 }
-
 .SkillsLangAndShool span{
   width: 66%;
-  color:#060011;
-  
+  color:var(--text-color);
 }
-
 .SkillsLangAndShool h3{
   font-family: 'Roboto', sans-serif;
   font-size:32px;
@@ -313,7 +264,6 @@ main{
   font-family: 'Roboto', sans-serif;
   font-size:24px;
 }
-
 .Skills ul{
   display: inline-flex;
   flex-direction: row;
@@ -328,17 +278,12 @@ main{
   width: 100%;
   text-align: center;
 }
-
 .Icons li img{
   width: 50%;
 }
-
 .List li{
   width: 200px;
 }
-
-
-
 .Lang ul{
   display: inline-flex;
   flex-direction: row;
@@ -349,13 +294,94 @@ main{
   padding:0;
   margin:0;
 }
-
-
-
 .List li{
   width: 200px;
 }
-
 .Education{
   text-align: center;
+}
+
+/* -------------------*/
+/*      Projects      */
+/* -------------------*/
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  background-color: white;
+  padding-top: 20px;
+}
+.project-slide {
+  margin: 1em;
+  width: 35%;
+  height: 95vh;
+  height: calc(min-content + 70px);
+  background-color: rgb(226, 226, 226) ;
+  box-shadow: 2px 0px 20px rgb(34, 34, 34);
+  font-size: 1.75vh;
+}
+.titletextspace {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity as needed */
+  color: #fff; /* Adjust the text color as needed */
+  font-size: 14px;
+  width: 100%;
+}
+.titletextspace-contents{
+  margin: 10px;
+}
+.project-slide img {
+  width: 100%;
+}
+.description-text{
+  padding: 10px;
+  padding-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  color:var(--text-color);
+}
+.imagecontainer {
+  position: relative;
+  overflow: hidden;
+}
+.imagecontainer img{
+ 
+  transition-duration: 0.3s;
+  margin: 0 auto;
+  display: block;
+  
+}
+.imagecontainer img:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  z-index: 0;
+  
+}
+
+/* -------------------*/
+/* inside the project */
+/* -------------------*/
+
+.mainabout{
+  width: 80%;
+  background-color: white;
+  color:var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size:24px;
+  padding:32px;
+  margin: 0 auto;
+  margin-bottom:24px;
+  box-shadow: 2px 0px 20px rgb(204, 204, 204);
+}
+.vibes-images img{
+  box-shadow: 2px 0px 20px rgb(204, 204, 204);
+}
+.container{
+  box-shadow: 2px 0px 20px rgb(204, 204, 204);
+
 }
